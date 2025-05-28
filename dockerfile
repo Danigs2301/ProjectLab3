@@ -14,4 +14,5 @@ COPY . .
 EXPOSE 8000
 
 # Comando para ejecutar Gunicorn (ajusta 'Fanalca.wsgi:application' si es necesario)
-CMD ["gunicorn", "Fanalca.wsgi:application", "-b", "0.0.0.0:8000"]
+CMD ["gunicorn", "Fanalca.wsgi:application", "--bind", "0.0.0.0:8000"]
+
